@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
   api.use([
     'meteor-platform',
-    'less',
+    'less@2.5.1',
     'underscore',
     'coffeescript',
     'http',
@@ -71,6 +71,7 @@ Package.onUse(function(api) {
   api.addFiles('src/lib/namespace.coffee');
   api.addFiles('src/lib/SettingsSchema.coffee');
   api.addFiles('src/lib/SettingsModel.coffee');
+  api.addFiles('src/lib/GitHubApiClient.coffee');
   api.addFiles('src/server/lib/SettingsServer.coffee', 'server');
   api.addFiles([
     'src/client/Accounts.ui.config.coffee',
